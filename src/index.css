@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header-image {
+  background-image: url(../src/assets/desktop/image-header.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+  .header-image {
+    background-image: url(../src/assets/mobile/image-header.jpg);
+    width: 100vw;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menu-box {
+    background-image: url(../src/assets/mobile/Menu\ Box.svg);
+    width: 380px;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+.sm-icons {
+  fill: hsl(167, 40%, 24%);
+  margin-top: 36px;
+  cursor: pointer;
+}
+.sm-icons:hover {
+  fill: white;
+}
